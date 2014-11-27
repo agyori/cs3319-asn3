@@ -1,0 +1,40 @@
+GENERAL REQUIREMENTS
+[ ] Multiple user types
+	[ ] Grad secretary (GS)
+	[ ] Professor (P)
+[ ] PhD students can only TA for 8 courses // This does not restrict anything
+[ ] Masters students can only TA for 3 courses // This does not restrict anything
+
+
+GRAD SECRETARY REQUIREMENTS
+[ ] GS can add TAs 
+[ ] GS can upload/store TA images
+	[ ] Image is always 120px wide by 150px tall
+	[ ] Image is saved as Pstudentnumber.jpg
+[ ] GS can modify first/last name and type of TAs
+[ ] GS cannot modify studentnumber or western user ID
+[ ] GS can add professor data
+[ ] GS can delete professor data
+[ ] GS can assign a TA a prof who is his HEAD supervisor
+	[ ] If GS tries to delete a prof who is HEAD, send warning message to GS
+	    This message states that she must either delete the TA or assign
+	    the TA a new head supervisor. Note: We do not delete the prof.
+[ ] GS can assign a TA a prof who is his co-supervisor
+[ ] GS can add courses
+[ ] GS can delete courses
+	[ ] If couse is deleted with a TA in ti, just get rid of all traces
+            that the TA was ever assigned to the course.
+[ ] GS can assign a TA to a course for a particular year/term while entering
+    the num of students in that course.
+[ ] Password for GS should be "janice"
+
+
+
+PROFESSOR REQUIREMENTS
+[ ] P can pick a name for themselves and see their assigned TAs
+	[ ] They can see the fname, lname, western user ID, image, and type
+	[ ] Also displays whether the prof is a co- or head supervisor to the TA
+[ ] P can pick a course, a term, and year and see ALL TAs in the course and
+    the class size of the course
+[ ] P can select a TA and see how many courses the TA is in and if they have
+    more courses than they are allowed (as specified under General Requirements)
