@@ -1,7 +1,7 @@
 SHOW databases;
-DROP database if exists lreid2tadb;
-create database lreid2tadb;
-use lreid2tadb;
+DROP database if exists tadb;
+create database tadb;
+use tadb;
 show tables;
 create table INSTRUCTOR  (firstname VARCHAR(30) not null, lastname VARCHAR(30) not null, userid VARCHAR(8) not NULL, primary key (userid));
 create table TEACHINGASSISTANT (firstname VARCHAR(30) not null, lastname VARCHAR(30) not null, studentnumber CHAR(9), userid VARCHAR(8) not NULL, gradtype VARCHAR (7), imagelocation VARCHAR(40), profuserid VARCHAR(8), primary key (userid), FOREIGN KEY (profuserid) REFERENCES INSTRUCTOR(userid) ON DELETE RESTRICT);

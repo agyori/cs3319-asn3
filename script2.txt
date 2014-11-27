@@ -1,4 +1,4 @@
-use lreid2tadb;
+use tadb;
 show tables;
 select * from INSTRUCTOR;
 LOAD DATA INFILE '/tmp/fall2014data.txt' INTO TABLE INSTRUCTOR FIELDS TERMINATED BY ',';
