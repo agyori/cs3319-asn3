@@ -8,7 +8,7 @@ GENERAL REQUIREMENTS
 
 GRAD SECRETARY REQUIREMENTS
 [x] GS can add TAs 
-[ ] GS can delete TAs
+[x] GS can delete TAs
 [ ] GS can upload/store TA images
 	[ ] Image is always 120px wide by 150px tall
 	[ ] Image is saved as Pstudentnumber.jpg
@@ -16,11 +16,11 @@ GRAD SECRETARY REQUIREMENTS
 [x] GS cannot modify studentnumber or western user ID
 [x] GS can add professor data
 [ ] GS can delete professor data
-[ ] GS can assign a TA a prof who is his HEAD supervisor
 	[ ] If GS tries to delete a prof who is HEAD, send warning message to GS
 	    This message states that she must either delete the TA or assign
 	    the TA a new head supervisor. Note: We do not delete the prof.
-[ ] GS can assign a TA a prof who is his co-supervisor
+[x] GS can assign a TA a prof who is his HEAD supervisor
+[x] GS can assign a TA a prof who is his co-supervisor
 [x] GS can add courses
 [ ] GS can delete courses
 	[ ] If couse is deleted with a TA in ti, just get rid of all traces

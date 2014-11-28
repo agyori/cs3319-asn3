@@ -123,9 +123,16 @@ Western User ID: <input type="text" name="profID"><br>
 <a name="assign_professor_as_supervisor"></a>
 <h2>Assign Professor as Supervisor:</h2>
 
-<!--Remember to add a radio button with the options "co-supervisor" and
-    "head supervisor"-->
 <!-- ASSIGN PROFESSOR AS SUPERVISOR FORM -->
+<form action="assignprofessor.php" method="post"
+enctype="multipart/form-data">
+Professor's ID: <input type="text" name="profID"><br>
+TA's ID: <input type="text" name="userID"><br>
+Type of Supervisor:<br>
+<input type="radio" name="assigntype" value="head">Head Supervisor<br>
+<input type="radio" name="assigntype" value="co">Co-Supervisor<br>
+</form>
+
 
 <p>
 <a href="#menu">Back to Menu</a>
@@ -174,6 +181,10 @@ Course Name: <input type="text" name="cname"><br>
 <h2>Delete Course:</h2>
 
 <!-- DELETE COURSE FORM -->
+<form action="deletecourse.php" method="post"
+enctype="multipart/form-data">
+<input type="text" name="courseNum"><br>
+</form>
 
 <p>
 <a href="#menu">Back to Menu</a>

@@ -6,7 +6,7 @@
 </head>
 <body>
 <?php
-	include 'connectdb.php'
+	include 'connectdb.php';
 ?>
 
 <?php
@@ -38,6 +38,7 @@
 <p>
 <br>
 <a href="gradsec.php">Back to Main Menu</a>
+</p>
 </body>
 </html>
 

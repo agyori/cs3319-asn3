@@ -17,9 +17,16 @@ include 'connectdb.php';
       die("delete failed");
    }
    else {
-      echo "TA successfully removed"
+      echo "TA successfully removed";
    }
    mysqli_close($connection);
 ?>
+
+<!-- Hyperlink to take back to main menu. -->
+<p>
+<br>
+<a href="gradsec.php">Back to Main Menu</a>
+</p>
+
 </body>
 </html>
