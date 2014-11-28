@@ -68,6 +68,8 @@ Head Supervisor User ID: <input type="text" name="headID"><br>
 <a name="upload_image"></a>
 <h2>Upload Image:</h2>
 
+<!-- UPLOAD IMAGE FORM -->
+
 <p>
 <a href="#menu">Back to Menu</a>
 <br><br><br>
@@ -75,6 +77,8 @@ Head Supervisor User ID: <input type="text" name="headID"><br>
 
 <a name="modify_ta_name"></a>
 <h2>Modify TA Name:</h2>
+
+<!-- MODIFY TA NAME FORM -->
 
 <p>
 <a href="#menu">Back to Menu</a>
@@ -84,6 +88,7 @@ Head Supervisor User ID: <input type="text" name="headID"><br>
 <a name="delete_ta"></a>
 <h2>Delete TA:</h2>
 
+<!-- DELETE TA FORM -->
 
 <p>
 <a href="#menu">Back to Menu</a>
@@ -95,6 +100,16 @@ Head Supervisor User ID: <input type="text" name="headID"><br>
 <a name="add_professor"></a>
 <h2>Add Professor:</h2>
 
+<!-- ADD PROFESSOR FORM -->
+<form action="addnewprofessor.php" method="post"
+enctype="multipart/form-data">
+New Professor's:<br>
+First Name: <input type="text" name="fname"><br>
+Last Name: <input type="text" name="lname"><br>
+Western User ID: <input type="text" name="profID"><br>
+</form>
+
+
 <p>
 <a href="#menu">Back to Menu</a>
 <br><br><br>
@@ -105,6 +120,7 @@ Head Supervisor User ID: <input type="text" name="headID"><br>
 
 <!--Remember to add a radio button with the options "co-supervisor" and
     "head supervisor"-->
+<!-- ASSIGN PROFESSOR AS SUPERVISOR FORM -->
 
 <p>
 <a href="#menu">Back to Menu</a>
@@ -113,6 +129,8 @@ Head Supervisor User ID: <input type="text" name="headID"><br>
 
 <a name="delete_professor"></a>
 <h2>Delete Professor</h2>
+
+<!-- DELETE PROFESSOR FORM -->
 
 <p>
 <a href="#menu">Back to Menu</a>
@@ -124,6 +142,8 @@ Head Supervisor User ID: <input type="text" name="headID"><br>
 <a name="add_course"></a>
 <h2>Add Course:</h2>
 
+<!-- ADD COURSE FORM -->
+
 <p>
 <a href="#menu">Back to Menu</a>
 <br><br><br>
@@ -132,6 +152,8 @@ Head Supervisor User ID: <input type="text" name="headID"><br>
 <a name="assign_ta_to_course"></a>
 <h2>Assign TA to Course:</h2>
 
+<!-- ASSIGN TA TO COURSE FORM -->
+
 <p>
 <a href="#menu">Back to Menu</a>
 <br><br><br>
@@ -139,6 +161,8 @@ Head Supervisor User ID: <input type="text" name="headID"><br>
 
 <a name="delete_course"></a>
 <h2>Delete Course:</h2>
+
+<!-- DELETE COURSE FORM -->
 
 <p>
 <a href="#menu">Back to Menu</a>
