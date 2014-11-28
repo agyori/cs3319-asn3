@@ -3,7 +3,7 @@ include 'connectdb.php';
 ?>
 <?php
 	$query1 = 'select * from TEACHINGASSISTANT where profuserid="'. $_POST['instructors'] .'"';
-	$query2 = 'select * from TEACHINGASSISTANT as t where exists (select * from CoSUPERVISE where CoSUPERVISE.profuserid="'. $_POST['instructors'] .'" and t.userid = tauserid)';
+	$query2 = 'select * from TEACHINGASSISTANT where userid = (select tauserid from CoSUPERVISE where CoSUPERVISE.tauserid not in (select userid from TEACHINGASSISTANT where TEACHINGASSISTANT.profuserid="' . $_POST['instructors'] .'"))';
 	$result1 = mysqli_query($connection,$query1);
 	$result2 = mysqli_query($connection,$query2);
 	if(!$result1 || !$result2){
