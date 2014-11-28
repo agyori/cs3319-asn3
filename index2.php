@@ -10,7 +10,7 @@ include 'connectdb.php';
 ?> 
 <h1>Welcome to the Western Database</h1>
 <h2>Teach Assitants are people too</h2>
-<a href="http://ec2-54-165-155-17.compute-1.amazonaws.com/assignment3/professor.php">Professors</a>
+<a href="http://ec2-54-165-155-17.compute-1.amazonaws.com/assignment3/findprofessor.php">Professors</a>
 <br>
 <a href="http://ec2-54-165-155-17.compute-1.amazonaws.com/assignment3/gradsec.php">Grad Sec</a>
 </body>
