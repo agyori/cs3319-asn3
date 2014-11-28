@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<metas charset="utf-8">
+<meta charset="utf-8">
 <title>Grad Secretary Control Panel</title>
 </head>
 <body>
@@ -89,6 +89,11 @@ Head Supervisor User ID: <input type="text" name="headID"><br>
 <h2>Delete TA:</h2>
 
 <!-- DELETE TA FORM -->
+<form action="deleteTA.php" method="post"
+enctype="multipart/form-data">
+<input type="text" name="userID"><br>
+<input type="submit" value="Delete TA"><br>
+</form>
 
 <p>
 <a href="#menu">Back to Menu</a>
