@@ -14,6 +14,7 @@
    $lname = $_POST["lname"];
    $userID = $_POST["userID"];
    $headID = $_POST["headID"];
+   $gradtype = $_POST["gradtype"];
    // Check if the headID is an actual ID in the professor table.
    
    $query1 = 'select max(studentnumber) as maxStudentNum from TEACHINGASSISTANT';
@@ -24,7 +25,7 @@
    $row = mysqli_fetch_assoc($result);
    $newkey = intval($row["maxStudentNum"]) + 1;
    $studentNum = (string) $newkey;
-   $query = 'insert into TEACHINGASSISTANT (firstname, lastname, userid, studentnumber, profuserid) values ("' . $fname . '","' . $lname . '","' . $userID . '","' . $studentNum . '","' . $headID . '")';
+   $query = 'insert into TEACHINGASSISTANT (firstname, lastname, userid, studentnumber, profuserid, gradtype) values ("' . $fname . '","' . $lname . '","' . $userID . '","' . $studentNum . '","' . $headID . '","' . $gradtype . '")';
    if (!mysqli_query($connection, $query)) {
       die("Error: insert failed" . mysqli_error($connection));
    }

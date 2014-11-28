@@ -46,12 +46,16 @@ include 'connectdb.php';
 <a name="add_ta"></a>
 <h2>Add TA:</h2>
 
+<!-- ADD NEW TA FORM -->
 <form action="addnewTA.php" method="post"
 enctype="multipart/form-data">
 New TA's:<br>
 First Name: <input type="text" name="fname"><br>
 Last Name: <input type="text" name="lname"><br>
 Western User ID: <input type="text" name="userID"><br>
+Student Type: <br>
+<input type="radio" name="gradtype" value="Masters">Masters<br>
+<input type="radio" name="gradtype" value="PhD">PhD<br>
 Head Supervisor User ID: <input type="text" name="headID"><br>
 <input type="submit" value="Add New TA"><br>
 </form>
