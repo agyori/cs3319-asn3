@@ -143,6 +143,12 @@ Western User ID: <input type="text" name="profID"><br>
 <h2>Add Course:</h2>
 
 <!-- ADD COURSE FORM -->
+<form action="addnewcourse.php" method="post"
+enctype="multipart/form-data">
+New Courses's:<br>
+Course Number: <input type="text" name="cnum"><br>
+Course Name: <input type="text" name="cname"><br>
+</form>
 
 <p>
 <a href="#menu">Back to Menu</a>
