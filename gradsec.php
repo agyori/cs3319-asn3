@@ -4,12 +4,13 @@
 <metas charset="utf-8">
 <title>Grad Secretary Control Panel</title>
 </head>
+<body>
 <?php 
-include 'connectiondb.php';
+include 'connectdb.php';
 ?>
 <h1> Welcome Grad Secretary!</h1>
 
-// The main menu
+<!--The main menu-->
 <a name="menu"></a>
 <h2>Main Menu:</h2>
 <ul>
@@ -38,12 +39,21 @@ include 'connectiondb.php';
 <hr>
 </p>
 
-// The beginning of the functions
+<!--The beginning of the functions-->
 
 <a name="ta_functions"></a>
 <h1>TA Functions</h1>
 <a name="add_ta"></a>
 <h2>Add TA:</h2>
+
+<form action="addnewTA.php" method="post"
+enctype="multipart/form-data">
+New TA's:<br>
+First Name: <input type="text" name="fname"><br>
+Last Name: <input type="text" name="lname"><br>
+Western User ID: <input type="text" name="userID"><br>
+<input type="submit" value="Add New TA"><br>
+</form>
 
 <p>
 <a href="#menu">Back to Menu</a>
@@ -88,8 +98,8 @@ include 'connectiondb.php';
 <a name="assign_professor_as_supervisor"></a>
 <h2>Assign Professor as Supervisor:</h2>
 
-// Remember to add a radio button with the options "co-supervisor" and
-// "head supervisor"
+<!--Remember to add a radio button with the options "co-supervisor" and
+    "head supervisor"-->
 
 <p>
 <a href="#menu">Back to Menu</a>
@@ -130,4 +140,5 @@ include 'connectiondb.php';
 <hr>
 </p>
 
+</body>
 </html>
