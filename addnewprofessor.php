@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>TA Added!</title>
+<title>Professor Added!</title>
 </head>
 <body>
 <?php
