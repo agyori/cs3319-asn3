@@ -52,6 +52,7 @@ New TA's:<br>
 First Name: <input type="text" name="fname"><br>
 Last Name: <input type="text" name="lname"><br>
 Western User ID: <input type="text" name="userID"><br>
+Head Supervisor User ID: <input type="text" name="headID"><br>
 <input type="submit" value="Add New TA"><br>
 </form>
 
