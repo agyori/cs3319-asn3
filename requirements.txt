@@ -12,7 +12,7 @@ GRAD SECRETARY REQUIREMENTS
 [ ] GS can upload/store TA images
 	[ ] Image is always 120px wide by 150px tall
 	[ ] Image is saved as Pstudentnumber.jpg
-[ ] GS can modify first/last name and type of TAs
+[x] GS can modify first/last name and type of TAs
 [x] GS cannot modify studentnumber or western user ID
 [x] GS can add professor data
 [ ] GS can delete professor data
@@ -22,8 +22,8 @@ GRAD SECRETARY REQUIREMENTS
 [x] GS can assign a TA a prof who is his HEAD supervisor
 [x] GS can assign a TA a prof who is his co-supervisor
 [x] GS can add courses
-[ ] GS can delete courses
-	[ ] If couse is deleted with a TA in ti, just get rid of all traces
+[x] GS can delete courses
+	[x] If couse is deleted with a TA in ti, just get rid of all traces
             that the TA was ever assigned to the course.
 [ ] GS can assign a TA to a course for a particular year/term while entering
     the num of students in that course.

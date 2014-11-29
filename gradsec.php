@@ -79,6 +79,17 @@ Head Supervisor User ID: <input type="text" name="headID"><br>
 <h2>Modify TA Name:</h2>
 
 <!-- MODIFY TA NAME FORM -->
+<form action="modifyTA.php" method="post"
+enctype="multipart/form-data">
+TA User ID to change: <input type="text" name="userID"><br>
+Modify TA Values:<br>
+First Name: <input type="text" name="fname"><br>
+Last Name: <input type="text" name="lname"><br>
+Student Type: <br>
+<input type="radio" name="studenttype" value="PhD">PhD<br>
+<input type="radio" name="studenttype" value="Masters">Masters<br>
+</form>
+
 
 <p>
 <a href="#menu">Back to Menu</a>
