@@ -11,7 +11,7 @@
 
    // See if it correct.
    if ($password == "janice") {
-      header('Location: http://ec2-54-165-155-17.compute-1.amazonaws.com/assignment3/gradsec.php');
+      header('Location: gradsec.php');
       exit;      
    }
    else {

@@ -7,7 +7,7 @@
 <body>
 <h1>Welcome to the Western TA Database</h1>
 <h2>Teaching Assistants are people too</h2>
-<a href="http://ec2-54-165-155-17.compute-1.amazonaws.com/assignment3/findprofessor.php">Professors</a>
+<a href="findprofessor.php">Professors</a>
 <br>
 <br>
 <!-- Enter password for GS verification -->
