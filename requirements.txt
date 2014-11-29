@@ -9,9 +9,9 @@ GENERAL REQUIREMENTS
 GRAD SECRETARY REQUIREMENTS
 [x] GS can add TAs 
 [x] GS can delete TAs
-[ ] GS can upload/store TA images
-	[ ] Image is always 120px wide by 150px tall
-	[ ] Image is saved as Pstudentnumber.jpg
+[x] GS can upload/store TA images
+	[x] Image is always 120px wide by 150px tall
+	[x] Image is saved as Pstudentnumber.jpg
 [x] GS can modify first/last name and type of TAs
 [x] GS cannot modify studentnumber or western user ID
 [x] GS can add professor data

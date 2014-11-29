@@ -69,6 +69,11 @@ Head Supervisor User ID: <input type="text" name="headID"><br>
 <h2>Upload Image:</h2>
 
 <!-- UPLOAD IMAGE FORM -->
+<form action="uploadimage.php" method="post"
+enctype="multipart/form-data">
+TA User ID: <input type="text" name="userID"><br>
+<input type="file" name="file" id="file"><br>
+</form>
 
 <p>
 <a href="#menu">Back to Menu</a>
