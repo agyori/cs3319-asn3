@@ -1,0 +1,19 @@
+<?php
+	$query1 = 'select * from TAAssignedTO where tauserid = "'. $_POST["ta"] .'"';
+	$query2 = 'select COUNT(*) from TAAssignedTO where tauserid = "'. $_POST["ta"] .'"';
+	$query3 = 'select gradtype from TEACHINGASSISTANT where tauserid = "'. $_POST["ta"] .'"';
+	$result1 = mysqli_query($connection,$query1);
+	$result2 = mysqli_query($connection, $query2);
+	$result3 = mysqli_query($connection, $query3);
+	if(!$result1 || !$result2 || !$result3){
+		die("database query failed.");
+	}
+	//This is to print the courses a ta is assigned to
+	echo "Courses:</br>";
+	//list the courses
+	while ($row=mysqli_fetch_assoc($result1)){
+		echo $row["coursenumber"] . '</br>';
+	}
+	$
+	if (
+?>
