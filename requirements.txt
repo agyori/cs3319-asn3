@@ -25,7 +25,7 @@ GRAD SECRETARY REQUIREMENTS
 [x] GS can delete courses
 	[x] If couse is deleted with a TA in ti, just get rid of all traces
             that the TA was ever assigned to the course.
-[ ] GS can assign a TA to a course for a particular year/term while entering
+[x] GS can assign a TA to a course for a particular year/term while entering
     the num of students in that course.
 [ ] Password for GS should be "janice"
 

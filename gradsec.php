@@ -187,6 +187,17 @@ Course Name: <input type="text" name="cname"><br>
 <h2>Assign TA to Course:</h2>
 
 <!-- ASSIGN TA TO COURSE FORM -->
+<form action="assignTA.php" method="post"
+enctype="multipart/form-data">
+TA User ID: <input type=text" name="userID"><br>
+Course Number: <input type="text" name="courseNum"><br>
+Term:<br>
+<input type="radio" name="term" value="Fall">Fall<br>
+<input type="radio" name="term" value="Spring">Spring<br>
+<input type="radio" name="term" value="Summer">Summer<br>
+Year: <input type="text" name="year"><br>
+Number of Students in Course: <input type="text" name="numofstudents"><br>
+</form>
 
 <p>
 <a href="#menu">Back to Menu</a>
