@@ -73,6 +73,7 @@ Head Supervisor User ID: <input type="text" name="headID"><br>
 enctype="multipart/form-data">
 TA User ID: <input type="text" name="userID"><br>
 <input type="file" name="file" id="file"><br>
+<input type="submit" value="Upload Image"><br>
 </form>
 
 <p>
@@ -81,9 +82,9 @@ TA User ID: <input type="text" name="userID"><br>
 </p>
 
 <a name="modify_ta_name"></a>
-<h2>Modify TA Name:</h2>
+<h2>Modify TA:</h2>
 
-<!-- MODIFY TA NAME FORM -->
+<!-- MODIFY TA FORM -->
 <form action="modifyTA.php" method="post"
 enctype="multipart/form-data">
 TA User ID to change: <input type="text" name="userID"><br>
@@ -93,6 +94,7 @@ Last Name: <input type="text" name="lname"><br>
 Student Type: <br>
 <input type="radio" name="studenttype" value="PhD">PhD<br>
 <input type="radio" name="studenttype" value="Masters">Masters<br>
+<input type="submit" value="Modify TA"><br>
 </form>
 
 
@@ -128,6 +130,7 @@ New Professor's:<br>
 First Name: <input type="text" name="fname"><br>
 Last Name: <input type="text" name="lname"><br>
 Western User ID: <input type="text" name="profID"><br>
+<input type="submit" value="Add Professor"><br>
 </form>
 
 
@@ -147,6 +150,7 @@ TA's ID: <input type="text" name="userID"><br>
 Type of Supervisor:<br>
 <input type="radio" name="assigntype" value="head">Head Supervisor<br>
 <input type="radio" name="assigntype" value="co">Co-Supervisor<br>
+<input type="submit" value="Assign Professor as Supervisor"><br>
 </form>
 
 
@@ -159,6 +163,11 @@ Type of Supervisor:<br>
 <h2>Delete Professor</h2>
 
 <!-- DELETE PROFESSOR FORM -->
+<form action="deleteprofessor.php" method="post"
+enctype="multipart/form-data">
+Professor User ID: <input type="text" name="profuserID"><br>
+<input type="submit" value="Delete Professor"><br>
+</form>
 
 <p>
 <a href="#menu">Back to Menu</a>
@@ -176,6 +185,7 @@ enctype="multipart/form-data">
 New Courses's:<br>
 Course Number: <input type="text" name="cnum"><br>
 Course Name: <input type="text" name="cname"><br>
+<input type="submit" value="Add Course"><br>
 </form>
 
 <p>
@@ -197,6 +207,7 @@ Term:<br>
 <input type="radio" name="term" value="Summer">Summer<br>
 Year: <input type="text" name="year"><br>
 Number of Students in Course: <input type="text" name="numofstudents"><br>
+<input type="submit" value="Assign TA to Course"><br>
 </form>
 
 <p>
@@ -211,6 +222,7 @@ Number of Students in Course: <input type="text" name="numofstudents"><br>
 <form action="deletecourse.php" method="post"
 enctype="multipart/form-data">
 <input type="text" name="courseNum"><br>
+<input type="submit" value="Delete Course"><br>
 </form>
 
 <p>
