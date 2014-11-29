@@ -22,10 +22,10 @@
                                     echo '<p><hr>';
                                     echo $_FILES["file"]["name"] . " already exists. ";
                                     echo '<p><hr>';
-                                    $TApic = "NULL";
+                                    $pic = "NULL";
                         } else {
                                     move_uploaded_file($_FILES["file"]["tmp_name"],"upload/" . $_FILES["file"]["name"]);
-                                    $TApic = "upload/" . $_FILES["file"]["name"];
+                                    $pic = "upload/" . $_FILES["file"]["name"];
                         } // end of else
             } // end of else
      } else {
