@@ -15,8 +15,8 @@ GRAD SECRETARY REQUIREMENTS
 [x] GS can modify first/last name and type of TAs
 [x] GS cannot modify studentnumber or western user ID
 [x] GS can add professor data
-[ ] GS can delete professor data
-	[ ] If GS tries to delete a prof who is HEAD, send warning message to GS
+[x] GS can delete professor data
+	[x] If GS tries to delete a prof who is HEAD, send warning message to GS
 	    This message states that she must either delete the TA or assign
 	    the TA a new head supervisor. Note: We do not delete the prof.
 [x] GS can assign a TA a prof who is his HEAD supervisor
