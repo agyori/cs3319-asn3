@@ -17,7 +17,7 @@
 
 
    // Update the TEACHINGASSISTANT table where userid=$userID
-   $query = 'update TEACHINGASSISTANT set firstname="' . $fname . '", lastname="' . $lname . '", studenttype="' . $studenttype . '" where userid="' . $userID . '"';
+   $query = 'update TEACHINGASSISTANT set firstname="' . $fname . '", lastname="' . $lname . '", gradtype="' . $studenttype . '" where userid="' . $userID . '"';
    if (!mysqli_query($connection, $query)) {
       die("Error: update failed");
    }

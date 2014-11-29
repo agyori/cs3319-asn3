@@ -8,9 +8,10 @@
 	}
 	echo "Which teaching assitant would you like?</br>";
 	while ($row = mysqli_fetch_assoc($result1)){
+		echo '<imgsrc = " . $row["imagelocation"]. " height="60" width="60"><br>';
 		echo '<input type ="radio" name = "ta" value= "';
 		echo $row["userid"];
-		echo '">' . $row["firstname"] . " " . $row["lastname"] . " ". $row["userid"] . " Head Supervisor, <imgsrc = . " . $row["imagelocation"]. " height='60' width='60'><br>";
+		echo '">' . $row["firstname"] . " " . $row["lastname"] . " ". $row["userid"] . " Head Supervisor, <imgsrc = " . $row["imagelocation"]. " height='60' width='60'><br>";
 	}
 	while ($row = mysqli_fetch_assoc($result2)){
 		echo '<input type = "radio" name = "ta" value= "';

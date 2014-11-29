@@ -23,7 +23,10 @@ include 'connectdb.php';
 	$row = mysqli_fetch_assoc($result);
 	echo 'Number of students : '. $row["numofstudents"] .'</br>';
 	echo 'Teaching Assistants: </br>';
-	echo $row["firstname"] .' '. $row["lastname"];
+	echo $row["firstname"] .' '. $row["lastname"] .', '. $row["userid"].'</br>';
+	while($row = mysqli_fetch_assoc($result)){
+		echo $row["firstname"] .' '. $row["lastname"] .', '. $row["userid"].'</br>';
+	}
 ?>
 </body>
 </html>
