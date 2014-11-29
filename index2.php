@@ -2,16 +2,20 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Western ta database</title>
+<title>Western TA Database</title>
 </head>
 <body>
-<?php
-include 'connectdb.php';
-?> 
-<h1>Welcome to the Western Database</h1>
-<h2>Teach Assitants are people too</h2>
+<h1>Welcome to the Western TA Database</h1>
+<h2>Teaching Assistants are people too</h2>
 <a href="http://ec2-54-165-155-17.compute-1.amazonaws.com/assignment3/findprofessor.php">Professors</a>
 <br>
-<a href="http://ec2-54-165-155-17.compute-1.amazonaws.com/assignment3/gradsec.php">Grad Sec</a>
+<br>
+<!-- Enter password for GS verification -->
+<form action="verification.php" method="post"
+enctype="multipart/form-data">
+Grad Secretary:<br>
+Enter password: <input type="text" name="password"><br>
+<input type="submit" value="Log In"><br>
+</form>
 </body>
 </html>
