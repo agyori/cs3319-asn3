@@ -9,7 +9,8 @@
         include 'connectdb.php';
 ?>
 <h1>Professors</h1>
-<form action = "professor.php" method ="post">
+<form action = "professor.php" method ="post"
+enctype="multipart/form-data">
 <br>
 <?php
 include 'getprof.php';

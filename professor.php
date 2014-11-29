@@ -5,7 +5,9 @@
 <title>Professor</title>
 </head>
 <body>
-<form action="teachassist.php" method="post">
+<form action="teachassist.php" method="post"
+enctype="multipart/formdata">
+</br>
 <?php
 	include 'connectdb.php';
 	$whichprof=$_POST["instructors"];
